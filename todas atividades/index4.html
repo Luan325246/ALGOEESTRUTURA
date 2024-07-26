@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let intervalos0a25 = 0;
+        let intervalos26a50 = 0;
+        let maiorQue50 = 0;
+        let n = parseInt(prompt("digite um numero"));
+
+        while (n >=0) {
+            if (n <=25){
+                intervalos0a25++
+            }else if (n <=50){
+                intervalos26a50++
+            }else{
+                maiorQue50++
+            }
+            n = parseInt(prompt("digite um numero "))
+        }
+        window.alert("entre 0 e 25: " + intervalos0a25)
+            window.alert("entre 26 e 50: " + intervalos26a50)
+            window.alert("acima de 50: " + maiorQue5)
+        
+
+    </script>
+</body>
+</html>

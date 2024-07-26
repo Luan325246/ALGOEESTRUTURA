@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma = 0
+        let media = 0
+        let n_jogadores = parseInt(prompt("Digite o número de jogadores do time: "))
+
+        for (let i = 1; i <= n_jogadores; i++) {
+            let altura = parseFloat(prompt("Digite a altura dos jogadores "))
+            soma += altura 
+            media = soma/ n_jogadores
+        }
+        window.alert("A media do time é: " + media)
+
+    </script>
+</body>
+</html>
