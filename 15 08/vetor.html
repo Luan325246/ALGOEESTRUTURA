@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Criar um array para armazenar os dados dos alunos
+        let alunos = [];
+
+// Função para ler os dados de um aluno
+function lerDadosAluno(){
+    let nome = prompt("Digite o nome do aluno: ");
+    let faltas = parseInt(prompt("Digite o numero de faltas: "));
+    let media = parseFloat(prompt("Digite a media do aluno: "));
+
+// Criar um objeto com os dados do aluno
+let aluno = {
+    nome: nome, 
+    faltas: faltas,
+    media: media
+};
+
+// Adicionar o aluno ao array ou vetor
+alunos.push(aluno);
+} 
+
+// Le os dados de 4 alunos
+for (let i = 0; i < 4; i++) {
+    lerDadosAluno();
+}
+
+//Exibe a listagem dos alunos
+window.alert("Listagem dos alunos: ");
+for (let aluno of alunos){
+    window.alert(`Nome: ${aluno.nome}, Faltas: ${aluno.faltas}, Média: ${aluno.media}`);
+}
+    </script>
+</body>
+</html>
