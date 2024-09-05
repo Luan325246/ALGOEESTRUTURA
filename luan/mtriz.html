@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Matrizes JavaScript</h1>
+    <h2> O metodo at() </h2>
+    <p>O metodo at() retorna um elemento indexado de uma matriz</p>
+    <p id="demonstração"></p>
+    <script>
+    const frutas = ["Banana","Manga","Melamcia","maçã"];
+    //no .at podemos ultilizar só a chave[0]
+    //se colocarmos -1 ele vai falar o ultimo objt
+    // copyWithian ele vai ficar com o N de frutas repetindo
+    let fruta = frutas.copyWithin(2,1,2);
+    document.getElementById("demonstração").innerHTML = fruta;
+    </script>
+</body>
+</html>
