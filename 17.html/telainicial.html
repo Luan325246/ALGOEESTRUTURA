@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pipo.css">
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Registro de Participantes</strong></h1>
+        <form action="https://formspree.io/f/xpwzznwo"method="POST">
+  <form id="registroForm">
+            
+            <label for="nome"> <strong>Nome</strong></label>
+            <input type="text" id="nome" required>
+            <label for="cpf"><strong>CPF</strong></label>
+            <input type="text" id="cpf" required>
+            <label type="submit"><strong>Email</strong></label>
+            <input type="text" id="Email" required>
+            <select name="categoria" id="categoria"> 
+                <option value="1">ouvinte</option>
+                <option value="2">palestrante</option>
+                <option value="3">organizador</option>
+           </select>
+            <button type="submit"><strong>Registrar</strong></button>
+        </form>
+
+        
+
+        <button id="mostrarLista"><strong>Mostrar Lista de Participantes</strong></button>
+        <ul id="listaParticipantes"></ul>
+    </div>
+    <script src="TESTEANTES.JS"></script>
+</body>
+</html>

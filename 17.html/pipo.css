@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;/*esse vai colocar 
+    nossa 'caixa' no meio da tela juntamente com o de baixo se faltar um ano alinha*/
+    justify-content: center;
+    align-items: center;/* se não por esse ele vai se estender pela parte
+     central infinito vertical */
+     height: 100vh;
+     background-color: rgb(147, 245, 134);
+}
+
+.container {
+
+    max-width: 400px;
+    background-color: rgb(211, 246, 197);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+label, input, button{
+    display:block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:gray ;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ li{
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+ }
+
+ select{
+    padding: 5px; 
+    border-radius: 20px;
+    color: black;
+    background-color: aliceblue;
+ }
